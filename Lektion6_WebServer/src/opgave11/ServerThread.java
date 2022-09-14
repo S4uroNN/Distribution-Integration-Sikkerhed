@@ -23,6 +23,7 @@ public class ServerThread extends Thread{
 			String[] header = clientSentence.split(" ");
 			outToClient.writeBytes("HTTP 200 OK\n");
 			outToClient.writeBytes(ContentType(header[1]) + "\n");
+			System.out.println(header[1]);
 			outToClient.writeBytes("Connection: Close\n");
 			outToClient.writeBytes("\n");
 
