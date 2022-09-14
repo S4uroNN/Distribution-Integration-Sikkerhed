@@ -1,9 +1,8 @@
 package opgave11;
 
-import serverskeleton.common;
-
 import java.net.ServerSocket;
 import java.net.Socket;
+
 public class Server {
 	
 	/**
